@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-warning py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">QK Mobile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex m-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Bạn cần tìm gì?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                    class="bi bi-house pe-1"></i>Trang
+                                Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-info-circle pe-1"></i>Thông Tin
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-warning">
+                                <li><a class="dropdown-item" href="#">Địa Chỉ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html"><i class="bi bi-phone pe-1"></i>Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopping-cart.html"><i class="bi bi-cart3 pe-1"></i>Giỏ Hàng</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-person-circle pe-1"></i>Đăng Nhập
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-warning">
+                                <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="signup.html">Đăng ký</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 600px;">
+        <div id="login-form"
+            class="login-container bg-warning p-4 rounded col-lg-6 col-md-9 col-sm-9 text-center mx-auto"
+            style="margin-top: 85px;">
+            <h3>Đăng nhập với</h3>
+            <div class="social-buttons mb-2">
+                <button class="btn btn-danger rounded" style="width: 100px;">Google</button>
+                <button class="btn btn-danger rounded" style="width: 100px;">Apple</button>
+                <button class="btn btn-danger rounded" style="width: 100px;">Microsoft</button>
+            </div>
+            <p>hoặc</p>
+            <div class="input-container">
+                <input class="border border-secondary rounded px-3 py-2 my-2 w-75" type="text"
+                    placeholder="Nhập số điện thoại">
+                <input class="border border-secondary rounded px-3 py-2 my-2 w-75" type="password"
+                    placeholder="Nhập mật khẩu">
+                <div class="text-end w-75 mx-auto">
+                    <a href="#" id="forgot-password-number" class="text-danger text-decoration-none">Quên mật khẩu?</a>
+                </div>
+            </div>
+            <button class="login-button btn btn-danger px-3 py-2 rounded">Đăng nhập</button>
+            <p class="pt-3">Bạn chưa có tài khoản? <a class="text-danger text-decoration-none fw-bold"
+                    href="signup.html">Đăng ký ngay!</a>
+            </p>
+            <p class="m-0">Hãy đăng nhập để nhận được nhiều ưu đãi tốt nhất!</p>
+        </div>
+    </div>
+    <div id="forgot-password-form-number"
+        class="container-fluid d-flex justify-content-center align-items-center d-none fixed-top"
+        style="height: 600px;">
+        <div class="login-container bg-warning p-4 rounded col-lg-6 col-md-9 col-sm-9 text-center mx-auto"
+            style="margin-top: 85px;">
+            <h3>Quên mật khẩu</h3>
+            <p>Hãy nhập số điện thoại để thực hiện lấy lại mật khẩu</p>
+            <div class="input-container mb-3">
+                <input class="border border-secondary rounded px-3 py-2 my-2 w-75" type="text"
+                    placeholder="Nhập số điện thoại">
+                <div class="text-end w-75 mx-auto">
+                    <a href="#" class="text-danger text-decoration-none">Nhập email</a>
+                </div>
+            </div>
+            <button class="login-button btn btn-danger px-3 py-2 rounded">Tiếp tục</button>
+        </div>
+    </div>
+    <div id="forgot-password-form-email" class="container-fluid d-flex justify-content-center align-items-center d-none fixed-top" style="height: 600px;">
+        <div class="login-container bg-warning p-4 rounded col-lg-6 col-md-9 col-sm-9 text-center mx-auto"
+            style="margin-top: 85px;">
+            <h3>Quên mật khẩu</h3>
+            <p>Hãy nhập email để thực hiện lấy lại mật khẩu</p>
+            <div class="input-container mb-3">
+                <input class="border border-secondary rounded px-3 py-2 my-2 w-75" type="text"
+                    placeholder="Nhập email">
+                <div class="text-end w-75 mx-auto">
+                    <a href="#" id="forgot-password-email" class="text-danger text-decoration-none">Nhập số điện thoại</a>
+                </div>
+            </div>
+            <button class="login-button btn btn-danger px-3 py-2 rounded">Tiếp tục</button>
+        </div>
+    </div>
+    <div class="footer bg-warning py-4 mt-3">
+        <div class="footer-container d-flex flex-wrap justify-content-around container m-auto ">
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                <div class="social-icons">
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Facebook.webp"
+                            alt="Facebook"></a>
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Zalo.png" alt="Zalo"></a>
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Youtube.png"
+                            alt="YouTube"></a>
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Tiktok.webp"
+                            alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">TỔNG ĐÀI MIỄN PHÍ</h3>
+                <b>1900.1900</b>
+                <p>Góp ý, khiếu nại</p>
+                <b>1900.1900</b>
+                <p>Hỗ trợ kỹ thuật</p>
+                <b>1900.1900</b>
+                <p>Tư vấn mua hàng</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">VỀ CHÚNG TÔI</h3>
+                <ul class="list-unstyled p-0">
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Giới thiệu về công ty</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Quy chế hoạt động</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Dự án Doanh nghiệp</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Tin tức khuyến mại</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Hướng dẫn mua hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">CHÍNH SÁCH</h3>
+                <ul class="list-unstyled p-0">
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách bảo hành</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách đổi trả</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách bảo mật</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách trả góp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">HỖ TRỢ THANH TOÁN</h3>
+                <div class="payment-icons">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/visa.png" alt="Visa">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/Mastercard.png" alt="MasterCard">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/momo.png" alt="Momo">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/applepay.png" alt="Apple Pay">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom pt-3">
+            <div class="copyright text-center">
+                <p>© 2025 Công ty cổ phần ABC Việt Nam</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#forgot-password-number").click(function () {
+                $("#login-form").hide()
+                $("#forgot-password-form-number").show().removeClass("d-none");
+            });
+            $("#forgot-password-form-number").click(function () {
+                $("#login-form").hide()
+                $("#forgot-password-form-email").show().removeClass("d-none");
+            });
+        });
+    </script>
+</body>
+
+</html>

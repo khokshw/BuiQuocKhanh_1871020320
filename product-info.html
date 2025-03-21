@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-warning" style="margin-top: 70px;">
+        <div class="text-center py-2">
+            <p><i class="bi bi-pin-angle-fill"></i> QK Mobile - Chuyên điện thoại chính hãng, giá tốt nhất!</p>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-warning py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">QK Mobile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex m-auto" role="search">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Bạn cần tìm gì?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                    class="bi bi-house pe-1"></i>Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-info-circle pe-1"></i>Thông Tin
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="map.html">Địa Chỉ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html"><i class="bi bi-phone pe-1"></i>Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopping-cart.html"><i class="bi bi-cart3 pe-1"></i>Giỏ Hàng</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-person-circle pe-1"></i>Đăng Nhập
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-warning">
+                                <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="signup.html">Đăng ký</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container d-flex flex-wrap mx-auto border border-warning bg-white rounded mt-4 p-5"
+        style="max-width: 1000px;">
+        <div class="left col-md-6 col-sm-12 py-4 text-center">
+            <img id="productImage" src="images/product-img/iPhone/13-white.jpg" class="pb-5" style="max-width: 200px;" alt="">
+            <div class="introduce text-start">
+                <h4 class="fw-bold">Đặc điểm nổi bật của iPhone 13</h4>
+                <ul class="highlight">
+                    <li>Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao</li>
+                    <li>Không gian hiển thị sống động - Màn hình 6.1" Super Retina XDR độ sáng cao, sắc nét</li>
+                    <li>Trải nghiệm điện ảnh đỉnh cao - Camera kép 12MP, hỗ trợ ổn định hình ảnh quang học</li>
+                    <li>Tối ưu điện năng - Sạc nhanh 20W, đầy 50% pin trong khoảng 30 phút</li>
+                </ul>
+                <p class="description text-justify">iPhone 13 được trang bị chip A15 Bionic mạnh mẽ với 6 nhân CPU và 4
+                    nhân GPU, cung cấp mức hiệu năng vượt trội, giúp xử lý nhanh chóng các tác vụ nặng. Màn hình Super
+                    Retina XDR 6.1 inch trên máy cũng được đánh giá cao khi mang tới hình ảnh sắc nét với độ sáng cao,
+                    tối ưu trải nghiệm xem nội dung dưới mọi điều kiện ánh sáng. Chưa hết, iPhone 13 còn sở hữu hệ thống
+                    camera kép 12MP với công nghệ ổn định hình ảnh quang học (OIS) cải thiện khả năng quay phim, chụp
+                    hình, ngay cả khi đang ở trong môi trường ánh sáng yếu.
+                </p>
+            </div>
+        </div>
+        <div class="right col-md-6 col-sm-12 ps-5">
+            <div class="options">
+                <p class="mb-1">Màu sắc</p>
+                <div class="d-flex flex-wrap gap-2 justify-content-center pb-3">
+                    <input type="radio" class="btn-check" name="color" id="white" autocomplete="off" checked>
+                    <label class="btn btn-outline-warning" for="white">Màu trắng</label>
+                    <input type="radio" class="btn-check" name="color" id="blue" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="blue">Màu xanh dương</label>
+                    <input type="radio" class="btn-check" name="color" id="red" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="red">Màu đỏ</label>
+                    <input type="radio" class="btn-check" name="color" id="green" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="green">Màu xanh lá</label>
+                    <input type="radio" class="btn-check" name="color" id="black" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="black">Màu đen</label>
+                </div>
+                <p class="mb-1">Dung lượng</p>
+                <div class="d-flex flex-wrap gap-2 pb-3 justify-content-center">
+                    <input type="radio" class="btn-check" name="storage" id="128" autocomplete="off" checked>
+                    <label class="btn btn-outline-warning" for="128">128GB</label>
+                    <input type="radio" class="btn-check" name="storage" id="256" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="256">256GB</label>
+                    <input type="radio" class="btn-check" name="storage" id="512" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="512">512GB</label>
+                    <input type="radio" class="btn-check" name="storage" id="1TB" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="1TB">1TB</label>
+
+                </div>
+                <div class="d-flex flex-wrap gap-2 justify-content-center pb-4">
+                    <button class="btn btn-danger rounded w-50">Mua ngay</button>
+                    <div class="d-flex gap-2 w-100">
+                        <button class="btn btn-danger rounded w-50">Trả góp 0%</button>
+                        <button id="addToCart" class="btn btn-danger rounded w-50">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="information border border-warning py-2 px-3 rounded">
+                <h3>Thông số kỹ thuật</h3>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Màn hình
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                         <p>Kích thước màn hình: 6.1 inches</p>
+                         <p>Công nghệ màn hình: Super Retina XDR OLED</p>
+                         <p>Độ phân giải màn hình: 2532 x 1170 pixels</p>
+                         <p>Tính năng màn hình: Màn hình super Retina XDR, OLED, 460 ppi, HDR display, công nghệ True Tone Wide color (P3), Haptic Touch, Lớp phủ oleophobic chống bám vân tay</p>
+                         <p>Tần số quét: 60Hz</p>
+                         <p>Kiểu màn hình: Tai thỏ</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Camera trước
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Camera trước: 12MP, f/2.2</p>    
+                            <p>Quay video trước: 4K 2160p@30fps | FullHD 1080p@30fps | FullHD 1080p@60fps | HD 720p@30fps</p>                    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Camera sau
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Tính năng camera: Chạm lấy nét, HDR, Nhận diện khuôn mặt, Quay chậm (Slow Motion), Toàn cảnh (Panorama), Tự động lấy nét (AF), Xóa phông, Nhãn dán (AR Stickers), Nhận diện khuôn mặt</p>
+                            <p>Camera sau: Camera góc rộng: 12MP, f/1.6, Camera góc siêu rộng: 12MP, ƒ/2.4</p>
+                            <p>Quay video sau: 4K 2160p@30fps/60fps/24fps, FullHD 1080p@30fps/60fps/120fps/240fps, HD 720p@30fps</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            Bộ nhớ
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                              <p>Bộ nhớ trong: 128GB</p>
+                              <p>Dung lượng RAM: 4GB</p>
+                              <p>Hỗ trợ thẻ nhớ: Không</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            Vi xử lý & đồ họa
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                              <p>Chipset: Apple A15</p>
+                              <p>GPU: Apple GPU 4 nhân</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                            Tính năng khác
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                              <p>Kháng nước, bụi: IP68</p>
+                              <p>Tính năng đặc biệt: Hỗ trợ 5G, Sạc không dây, Nhận diện khuôn mặt, Kháng nước, kháng bụi, Điện thoại AI</p>
+                              <p>Các loại cảm biến: Cảm biến gia tốc, Cảm biến tiệm cận, Cảm biến ánh sáng, La bàn, Con quay hồi chuyển, Cảm biến áp kế, Cảm biến trọng lực</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-warning py-4 mt-3">
+        <div class="footer-container d-flex flex-wrap justify-content-around container-fluid m-auto ">
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                <div class="social-icons">
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Facebook.webp"
+                            alt="Facebook"></a>
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Zalo.png" alt="Zalo"></a>
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Youtube.png"
+                            alt="YouTube"></a>
+                    <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Tiktok.webp"
+                            alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">TỔNG ĐÀI MIỄN PHÍ</h3>
+                <b>1900.1900</b>
+                <p>Góp ý, khiếu nại</p>
+                <b>1900.1900</b>
+                <p>Hỗ trợ kỹ thuật</p>
+                <b>1900.1900</b>
+                <p>Tư vấn mua hàng</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">VỀ CHÚNG TÔI</h3>
+                <ul class="list-unstyled p-0">
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Giới thiệu về công ty</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Quy chế hoạt động</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Dự án Doanh nghiệp</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Tin tức khuyến mại</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Hướng dẫn mua hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">CHÍNH SÁCH</h3>
+                <ul class="list-unstyled p-0">
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách bảo hành</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách đổi trả</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách bảo mật</a></li>
+                    <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách trả góp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="fs-5 mb-2">HỖ TRỢ THANH TOÁN</h3>
+                <div class="payment-icons">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/visa.png" alt="Visa">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/Mastercard.png" alt="MasterCard">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/momo.png" alt="Momo">
+                    <img class="img-fluid me-2" style="width: 40px;" src="images/applepay.png" alt="Apple Pay">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom pt-3">
+            <div class="copyright text-center">
+                <p>© 2025 Công ty cổ phần ABC Việt Nam</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

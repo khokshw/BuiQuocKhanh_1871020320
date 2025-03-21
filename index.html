@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-warning py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">QK Mobile</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex m-auto" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Bạn cần tìm gì?" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house pe-1"></i>Trang Chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-info-circle pe-1"></i>Thông Tin
+              </a>
+              <ul class="dropdown-menu border-0 bg-warning">
+                <li><a class="dropdown-item" href="map.html">Địa Chỉ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html"><i class="bi bi-phone pe-1"></i>Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shopping-cart.html"><i class="bi bi-cart3 pe-1"></i>Giỏ Hàng</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-person-circle pe-1"></i>Đăng Nhập
+              </a>
+              <ul class="dropdown-menu border-0 bg-warning">
+                <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="signup.html">Đăng ký</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid bg-warning" style="margin-top: 70px;">
+    <div class="text-center py-2">
+      <p><i class="bi bi-pin-angle-fill"></i> QK Mobile - Chuyên điện thoại chính hãng, giá tốt nhất!</p>
+    </div>
+  </div>
+  <div class="banner container my-4" style="cursor: pointer;">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Banner1.png" class="w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Banner2.png" class="w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Banner3.png" class="w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img src="images/Banner4.png" class="w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Banner5.png" class="w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Banner6.png" class="w-100 rounded-4" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container bg-warning rounded-3">
+    <div class="text-center py-3">
+      <i class="bi bi-gift-fill"></i> Giảm ngay <span class="text-danger">50%</span> cho đơn hàng trên 10 triệu! <i class="bi bi-hourglass"></i> Chỉ hôm nay! <i class="bi bi-truck"></i> Giao hàng miễn phí toàn quốc
+    </div>
+  </div>
+  </div>
+  <div class="container mt-5 border border-warning rounded-3 p-4">
+    <h3 class="text-center text-warning mb-4">Mẫu sản phẩm bán chạy <i class="bi bi-fire text-warning"></i></h3>
+    <div class="product-container d-flex flex-wrap justify-content-center" >
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/iPhone/13-white.jpg"
+            alt="chụp ảnh đẹp màn hình đẹp mặt lưng kính" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">iPhone 13 256GB | Chính hãng VN/A</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super Retina XDR OLED 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">11.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">15.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.7 • Đã bán 69,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/RogPhone/8pro-trang.webp"
+            alt="chơi game cấu hình cao sạc nhanh" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">ASUS ROG Phone 8 Pro 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">26.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black" style="cursor: pointer;">
+        <div class="w-100">
+          <img src="images/product-img/Xiaomi/15ultra-trang.webp"
+            alt="dung lượng lớn cấu hình cao pin trâu" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Xiaomi 15 Ultra 5G 16GB 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">25.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+      </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/iPhone/15-xanhla.jpg"
+            alt="chụp ảnh đẹp mặt lưng kính sạc không dây" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">iPhone 15 128GB | Chính hãng VN/A</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super Retina XDR OLED 6.1"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">128GB | 512GB</span></p>
+        <p class="text-danger fw-bold fs-5">15.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">22.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-16%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.4 • Đã bán 20,4k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/Xiaomi/14C.webp"
+            alt="pin trâu sạc nhanh sạc ngược" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Xiaomi Redmi 14C 8GB 128GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">AMOLED 6.1"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">128GB | 256GB</span></p>
+        <p class="text-danger fw-bold fs-5">3.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">4.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/SamSung/25ultra-trang.jpg"
+            alt="chụp ảnh đẹp màn hình đẹp sạc ngược" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Samsung Galaxy S25 Ultra 12GB 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Dynamic AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">28.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">34.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-17%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/Xiaomi/14Tpro.webp"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Xiaomi 14T Pro 12GB 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">20.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">26.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/SamSung/s24ultra-xam.jpg"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Samsung Galaxy S24 Ultra 12GB 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Dynamic AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">23.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/Xiaomi/15.webp"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Xiaomi 15 5G 12GB 128Gb</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">128GB | 256GB | 512GB</span></p>
+        <p class="text-danger fw-bold fs-5">26.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/RogPhone/6-trang.webp"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">ASUS ROG Phone 6 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">26.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/iPhone/16e-trang.jpg"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">iPhone 16e 128GB | Chính hãng VN/A</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super Retina XDR OLED 6.1"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">128GB | 256GB | 512GB</span></p>
+        <p class="text-danger fw-bold fs-5">14.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">15.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-7%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.6 • Đã bán 3,4k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/SamSung/zfold6-trang.jpg"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Samsung Galaxy Z Fold6 12GB 256GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Dynamic AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">36.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">39.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/RogPhone/5s-trang.webp"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">ASUS ROG Phone 5S 128GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">26.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/iPhone/16promax-trang.jpg"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">iPhone 16 Pro Max 256GB | Chính hãng VN/A</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super Retina XDR OLED 6.1"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">30.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">34.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/SamSung/25-xanhdatroi.jpg"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">Samsung Galaxy S25 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Dynamic AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">26.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+      <a href="" class="product border p-2 bg-white rounded-3 text-center text-decoration-none text-black">
+        <div class="w-100">
+          <img src="images/product-img/RogPhone/4-den.webp"
+            alt="" class="product-img my-4">
+        </div>
+        <h5 class="fw-bold">ASUS ROG Phone 4 512GB</h5>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">Super AMOLED 2X 6.9"</span></p>
+        <p><span class="bg-secondary text-white small rounded-2 px-2 py-1">256GB | 512GB | 1TB</span></p>
+        <p class="text-danger fw-bold fs-5">26.990.000₫
+          <span class="text-secondary text-decoration-line-through ms-1 fs-6">30.990.000₫</span>
+          <span class="fs-6 text-success fw-bold">-13%</span>
+        </p>
+        <p class="small text-warning">⭐ 4.8 • Đã bán 30,5k</p>
+    </a>
+    </div>
+  </div>
+  <div class="footer bg-warning py-4 mt-3">
+    <div class="footer-container d-flex flex-wrap justify-content-around container-fluid m-auto ">
+      <div class="footer-section">
+        <h3 class="fs-5 mb-2">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+        <div class="social-icons">
+          <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Facebook.webp" alt="Facebook"></a>
+          <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Zalo.png" alt="Zalo"></a>
+          <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Youtube.png" alt="YouTube"></a>
+          <a href="#"><img class="img-fluid me-2" style="width: 40px;" src="images/Tiktok.webp" alt="TikTok"></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3 class="fs-5 mb-2">TỔNG ĐÀI MIỄN PHÍ</h3>
+        <b>1900.1900</b>
+        <p>Góp ý, khiếu nại</p>
+        <b>1900.1900</b>
+        <p>Hỗ trợ kỹ thuật</p>
+        <b>1900.1900</b>
+        <p>Tư vấn mua hàng</p>
+      </div>
+
+      <div class="footer-section">
+        <h3 class="fs-5 mb-2">VỀ CHÚNG TÔI</h3>
+        <ul class="list-unstyled p-0">
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Giới thiệu về công ty</a></li>
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Quy chế hoạt động</a></li>
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Dự án Doanh nghiệp</a></li>
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Tin tức khuyến mại</a></li>
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Hướng dẫn mua hàng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3 class="fs-5 mb-2">CHÍNH SÁCH</h3>
+        <ul class="list-unstyled p-0">
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách bảo hành</a></li>
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách đổi trả</a></li>
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách bảo mật</a></li>
+          <li><a class="text-black fs-6 text-decoration-none" href="#">Chính sách trả góp</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3 class="fs-5 mb-2">HỖ TRỢ THANH TOÁN</h3>
+        <div class="payment-icons">
+          <img class="img-fluid me-2" style="width: 40px;" src="images/visa.png" alt="Visa">
+          <img class="img-fluid me-2" style="width: 40px;" src="images/Mastercard.png" alt="MasterCard">
+          <img class="img-fluid me-2" style="width: 40px;" src="images/momo.png" alt="Momo">
+          <img class="img-fluid me-2" style="width: 40px;" src="images/applepay.png" alt="Apple Pay">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom pt-3">
+      <div class="copyright text-center">
+        <p>© 2025 Công ty cổ phần ABC Việt Nam</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
